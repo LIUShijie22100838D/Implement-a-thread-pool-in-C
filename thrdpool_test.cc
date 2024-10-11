@@ -51,9 +51,7 @@ void test_thrdpool(int nproducer, int nconsumer) {
         << (double)g_count.load()*1000 / (t2-t1) << std::endl;
 
     thrdpool_terminate(pool);
-    std::cout<<"done0"<<std::endl;
     thrdpool_waitdone(pool);
-    std::cout<<"done2"<<std::endl;
 
 }
 
